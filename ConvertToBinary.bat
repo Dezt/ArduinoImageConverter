@@ -1,0 +1,2 @@
+python "ConvertToBinary.py"
+pause
