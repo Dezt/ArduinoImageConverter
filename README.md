@@ -1,5 +1,6 @@
 # ArduinoImageConverter
-A simple Python script that converts .png file(s) into a hardcoded array(s) that Arduino monochrome monitors can load and use
+A simple Python script that converts .png file(s) into a hardcoded array(s) that Arduino monochrome monitors can load and use.
+Designed to be used with the SSD1306 monochrome display, but naturally probably can be used for other monochrome displays.
 
 
 To use:
@@ -9,11 +10,11 @@ Change the last line of convertToBinary.py to the names of the .png files you wa
 
 The output will be written to a new file called *HARDCODED_IMAGE.txt*
 
-This file will contain the images converted to the following format...
+EXAMPLE:
 
-image:  ![test02](https://user-images.githubusercontent.com/245167/115947547-59963d00-a496-11eb-9177-c7d9977d7117.png)
+Image test02.png:  ![test02](https://user-images.githubusercontent.com/245167/115947547-59963d00-a496-11eb-9177-c7d9977d7117.png)
 
-will become: 
+Will be written into *HARDCODED_IMAGE.txt* as: 
 ```
 #define TEST02_WIDTH 48
 #define TEST02_HEIGHT 16
